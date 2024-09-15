@@ -1,0 +1,14 @@
+.icons {
+  position: fixed;
+  bottom: 6vh;
+  right: 6vw;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+  width: 12rem;
+  cursor: pointer;
+}
+
+.email {
+  cursor: cell;
+}
