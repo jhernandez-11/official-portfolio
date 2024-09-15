@@ -1,14 +1,15 @@
-import React, { useEffect } from 'react';
-import './CustomCursor.css'; // Import the styles for the cursor
+import React, { useEffect } from "react";
+import "./CustomCursor.css"; // Import the styles for the cursor
 
 const CustomCursor = () => {
   useEffect(() => {
-    const cursor = document.querySelector('.cursor');
-    const cursorInner = document.querySelector('.cursor2');
-    const links = document.querySelectorAll('a');
+    const cursor = document.querySelector(".cursor");
+    const cursorInner = document.querySelector(".cursor2");
+    const links = document.querySelectorAll("a");
 
     const moveCursor = (e) => {
-      cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+      cursor.style.left = `${e.clientX}px`;
+      cursor.style.top = `${e.clientY}px`;
     };
 
     const moveInnerCursor = (e) => {
@@ -17,43 +18,43 @@ const CustomCursor = () => {
     };
 
     const handleMouseDown = () => {
-      cursor.classList.add('click');
-      cursorInner.classList.add('cursorinnerhover');
+      cursor.classList.add("click");
+      cursorInner.classList.add("cursorinnerhover");
     };
 
     const handleMouseUp = () => {
-      cursor.classList.remove('click');
-      cursorInner.classList.remove('cursorinnerhover');
+      cursor.classList.remove("click");
+      cursorInner.classList.remove("cursorinnerhover");
     };
 
     const addHoverEffect = () => {
-      cursor.classList.add('hover');
+      cursor.classList.add("hover");
     };
 
     const removeHoverEffect = () => {
-      cursor.classList.remove('hover');
+      cursor.classList.remove("hover");
     };
 
     // Event listeners
-    document.addEventListener('mousemove', moveCursor);
-    document.addEventListener('mousemove', moveInnerCursor);
-    document.addEventListener('mousedown', handleMouseDown);
-    document.addEventListener('mouseup', handleMouseUp);
+    document.addEventListener("mousemove", moveCursor);
+    document.addEventListener("mousemove", moveInnerCursor);
+    document.addEventListener("mousedown", handleMouseDown);
+    document.addEventListener("mouseup", handleMouseUp);
 
     links.forEach((link) => {
-      link.addEventListener('mouseover', addHoverEffect);
-      link.addEventListener('mouseleave', removeHoverEffect);
+      link.addEventListener("mouseover", addHoverEffect);
+      link.addEventListener("mouseleave", removeHoverEffect);
     });
 
     // Cleanup on component unmount
     return () => {
-      document.removeEventListener('mousemove', moveCursor);
-      document.removeEventListener('mousemove', moveInnerCursor);
-      document.removeEventListener('mousedown', handleMouseDown);
-      document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener("mousemove", moveCursor);
+      document.removeEventListener("mousemove", moveInnerCursor);
+      document.removeEventListener("mousedown", handleMouseDown);
+      document.removeEventListener("mouseup", handleMouseUp);
       links.forEach((link) => {
-        link.removeEventListener('mouseover', addHoverEffect);
-        link.removeEventListener('mouseleave', removeHoverEffect);
+        link.removeEventListener("mouseover", addHoverEffect);
+        link.removeEventListener("mouseleave", removeHoverEffect);
       });
     };
   }, []);

@@ -8,7 +8,7 @@
   pointer-events: none;
   left: 0;
   top: 0;
-  transform: translate(calc(-50% + 15px), -50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
