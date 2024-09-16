@@ -9,6 +9,13 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+  .icons {
+    width: 9rem;
+    right: 3vw;
+  }
+}
+
 .email {
   cursor: cell;
 }

@@ -14,7 +14,7 @@ function SplashPage() {
           An aspiring UX Designer with an abstract view in the world.
         </p>
       </div>
-      <div className="text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase">
+      <div className="px-6 w-min md:w-fit text-7xl md:text-8xl font-extrabold uppercase">
         <p className="heading-text bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-comp-blue">
           MY DESIGN PATH
         </p>

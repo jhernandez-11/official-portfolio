@@ -1,6 +1,10 @@
-.about-text {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+.about-cont {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-cont {
+    height: max-content;
+    padding: 0 1rem 6rem 1rem;
+  }
 }

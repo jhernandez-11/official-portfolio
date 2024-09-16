@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const ScrollToBottom = () => {
-  const scrollToBottom = () => {
+  const buttonRef = useRef(null);
+
+  const scrollToBelowButton = () => {
+    // Get the button's position on the page
+    const buttonPosition = buttonRef.current.getBoundingClientRect().top + window.scrollY;
+
+    const offset = window.innerWidth * 0.15;
+
+    // Scroll to just below the button
     window.scrollTo({
-      top: document.documentElement.scrollHeight, // Scroll to the bottom
+      top: buttonPosition + offset, // Scrolls to the position below the button
       behavior: "smooth", // Smooth scrolling
     });
   };
 
   return (
-    <button onClick={scrollToBottom}>
+    <button ref={buttonRef} onClick={scrollToBelowButton}>
       <svg
         className="w-6 h-6 text-gray-800 dark:text-white"
         class="animate-bounce"
