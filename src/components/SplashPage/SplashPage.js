@@ -11,7 +11,8 @@ function SplashPage() {
         <AnimatedSVG />
         <p className="px-6 text-3xl font-mono pt-9 leading-10">
           Hi, my name is Jose. <br />
-          An aspiring UX Designer with an abstract view in the world.
+          An aspiring UX Designer with a unique, abstract perspective on the
+          world.
         </p>
       </div>
       <div className="px-6 w-min md:w-fit text-7xl md:text-8xl font-extrabold uppercase">
