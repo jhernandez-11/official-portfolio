@@ -1,0 +1,53 @@
+textarea {
+  border: solid 3px #44efef;
+  border-radius: 6px;
+  margin-left: 1rem;
+  width: 45vw;
+  height: 15vh;
+  resize: none;
+  padding: 3px;
+}
+
+@media only screen and (max-width:768px) {
+    textarea {
+        height: 12vh;
+        width: 57vw;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+textarea:focus {
+  outline: solid 3px #ef4444;
+}
+
+input {
+  border: solid 3px #44efef;
+  border-radius: 6px;
+}
+
+input:focus, input:active {
+  outline: solid 3px #ef4444;
+}
+
+#form-button {
+    background-color: #ef4444;
+    width: 6rem;
+    height: 15vh;
+    border-radius: 6px;
+    color: white;
+    margin-left: 1rem;
+}
+
+#form-button:hover, #form-button:active {
+    background-color: #44efef;
+    color: black;
+}
+
+@media only screen and (max-width:768px) {
+    #form-button {
+      height: 12vh;
+        width: 57vw;
+        margin-left: 0;
+    }
+}

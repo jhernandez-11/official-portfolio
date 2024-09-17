@@ -2,6 +2,7 @@ import React from "react";
 import SplashPage from "./components/SplashPage/SplashPage";
 import CustomCursor from "./components/Cursor/CustomCursor";
 import SocialIcons from "./components/Social-Icons/SocialIcons";
+import HomeButton from "./components/Home-Button/HomeButton";
 import {
   Route,
   Routes,
@@ -9,7 +10,8 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home-Page/Home";
 import About from "./pages/About-Me/About";
-import HomeButton from "./components/Home-Button/HomeButton";
+import Contact from "./pages/Contact/Contact";
+
 
 const App = () => {
   const location = useLocation()
@@ -20,6 +22,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <CustomCursor />

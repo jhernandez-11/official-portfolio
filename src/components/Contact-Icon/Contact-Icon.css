@@ -1,0 +1,11 @@
+#ci-cont {
+  width: 24rem;
+  height: 7.2rem;
+}
+
+@media only screen and (max-width: 640px) {
+  #ci-cont {
+    width: 15rem;
+    height: 7.8rem;
+  }
+}

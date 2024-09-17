@@ -87,7 +87,7 @@ export default function App() {
           </Link>
         </SwiperSlide>
         <SwiperSlide className="sliderr">
-          <Link to="/about" className="w-full h-full">
+          <Link to="/contact" className="w-full h-full">
             <div>Contact</div>
           </Link>
         </SwiperSlide>
