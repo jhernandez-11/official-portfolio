@@ -7,56 +7,83 @@ const CustomCursor = () => {
     const cursorInner = document.querySelector(".cursor2");
     const links = document.querySelectorAll("a");
 
+    let mouseX = 0,
+      mouseY = 0; // Mouse position
+    let cursorX = 0,
+      cursorY = 0; // Cursor actual position for smooth movement
+
     const moveCursor = (e) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
+      mouseX = e.clientX;
+      mouseY = e.clientY;
     };
 
-    const moveInnerCursor = (e) => {
-      cursorInner.style.left = `${e.clientX}px`;
-      cursorInner.style.top = `${e.clientY}px`;
+    const updateCursor = () => {
+      // Smooth the outer circle movement by interpolating between current and target positions
+      cursorX += (mouseX - cursorX) * 0.1; // Adjust this factor for more or less smoothness
+      cursorY += (mouseY - cursorY) * 0.1;
+
+      // Apply the transformation to both the cursors
+      cursor.style.left = `${cursorX}px`;
+      cursor.style.top = `${cursorY}px`;
+
+      cursorInner.style.left = `${mouseX}px`;
+      cursorInner.style.top = `${mouseY}px`;
+
+      requestAnimationFrame(updateCursor); // Keep the animation going
     };
 
-    const handleMouseDown = () => {
-      cursor.classList.add("click");
-      cursorInner.classList.add("cursorinnerhover");
+    // Only set event listeners if it's not a touch device
+    const isTouchDevice = () => {
+      return "ontouchstart" in window || navigator.maxTouchPoints > 0;
     };
 
-    const handleMouseUp = () => {
-      cursor.classList.remove("click");
-      cursorInner.classList.remove("cursorinnerhover");
-    };
+    if (isTouchDevice()) {
+      cursor.style.display = "none";
+      cursorInner.style.display = "none";
+    } else {
+      // Event listeners for mouse movement (non-touch devices)
+      document.addEventListener("mousemove", moveCursor);
 
-    const addHoverEffect = () => {
-      cursor.classList.add("hover");
-    };
+      // Start the animation loop
+      requestAnimationFrame(updateCursor);
 
-    const removeHoverEffect = () => {
-      cursor.classList.remove("hover");
-    };
+      const handleMouseDown = () => {
+        cursor.classList.add("click");
+        cursorInner.classList.add("cursorinnerhover");
+      };
 
-    // Event listeners
-    document.addEventListener("mousemove", moveCursor);
-    document.addEventListener("mousemove", moveInnerCursor);
-    document.addEventListener("mousedown", handleMouseDown);
-    document.addEventListener("mouseup", handleMouseUp);
+      const handleMouseUp = () => {
+        cursor.classList.remove("click");
+        cursorInner.classList.remove("cursorinnerhover");
+      };
 
-    links.forEach((link) => {
-      link.addEventListener("mouseover", addHoverEffect);
-      link.addEventListener("mouseleave", removeHoverEffect);
-    });
+      const addHoverEffect = () => {
+        cursor.classList.add("hover");
+      };
 
-    // Cleanup on component unmount
-    return () => {
-      document.removeEventListener("mousemove", moveCursor);
-      document.removeEventListener("mousemove", moveInnerCursor);
-      document.removeEventListener("mousedown", handleMouseDown);
-      document.removeEventListener("mouseup", handleMouseUp);
+      const removeHoverEffect = () => {
+        cursor.classList.remove("hover");
+      };
+
+      document.addEventListener("mousedown", handleMouseDown);
+      document.addEventListener("mouseup", handleMouseUp);
+
       links.forEach((link) => {
-        link.removeEventListener("mouseover", addHoverEffect);
-        link.removeEventListener("mouseleave", removeHoverEffect);
+        link.addEventListener("mouseover", addHoverEffect);
+        link.addEventListener("mouseleave", removeHoverEffect);
       });
-    };
+
+      // Cleanup event listeners on component unmount
+      return () => {
+        document.removeEventListener("mousemove", moveCursor);
+        document.removeEventListener("mousedown", handleMouseDown);
+        document.removeEventListener("mouseup", handleMouseUp);
+        links.forEach((link) => {
+          link.removeEventListener("mouseover", addHoverEffect);
+          link.removeEventListener("mouseleave", removeHoverEffect);
+        });
+      };
+    }
   }, []);
 
   return (
