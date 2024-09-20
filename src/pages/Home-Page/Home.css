@@ -14,11 +14,6 @@
   align-items: top;
 }
 
-.swiper-slide div {
-  padding-top: 2rem;
-  padding-left: 3rem;
-}
-
 @media screen and (max-width: 600px) {
   .swiper-slide {
     height: calc((100% - 30px)) !important;
@@ -36,6 +31,25 @@
   cursor: pointer;
 }
 
+.sliderr a div {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 18rem;
+  height: 6rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem 0 0 1rem;
+  border-radius: 6px;
+}
+
+.sliderr:hover a div {
+  color: white;
+  background-color: transparent;
+  transform: scale(1.11);
+  transition: ease-out .6s all;
+}
+
 .sliderr:nth-child(3) {
   background-image: url("/public/personas-cover.png");
 }
@@ -44,5 +58,4 @@
   background-image: none;
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
   background-color: #EF4444;
-
 }

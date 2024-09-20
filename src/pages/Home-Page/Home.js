@@ -67,7 +67,7 @@ export default function App() {
           },
         }}
         modules={[Grid, Pagination, Navigation]}
-        className="mySwiper text-left text-5xl font-mono font-bold text-black md:text-5xl lg:text-7xl"
+        className="mySwiper text-left text-2xl font-mono font-bold text-black md:text-3xl lg:text-4xl"
         // Key prop ensures Swiper re-renders when window size changes
         key={windowSize.width}
       >
