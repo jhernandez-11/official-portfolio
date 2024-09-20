@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="about-cont w-full flex flex-col sm:flex-row items-center place-items-start">
       <div className="grid w-full sm:w-60 sm:place-content-center text-5xl mb-6 sm:text-7xl font-bold font-sans uppercase">
-        <p className="about-text sm:rotate-[-90deg] w-max">About Me</p>
+        <p className="heading-text sm:rotate-[-90deg] w-max">About Me</p>
       </div>
       <p className="font-mono text-lg md:pr-6">
         Hi there! I'm Jose, a passionate front-end developer and UX designer
