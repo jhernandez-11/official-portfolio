@@ -12,6 +12,7 @@ import Home from "./pages/Home-Page/Home";
 import About from "./pages/About-Me/About";
 import Contact from "./pages/Contact/Contact";
 import Resume from "./pages/Resume/Resume";
+import Research from "./pages/UX-Research/Research";
 
 const App = () => {
   const location = useLocation(); // Get current route location
@@ -34,6 +35,7 @@ const App = () => {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/resume" element={<Resume />} />
+              <Route path="/research" element={<Research />} />
             </Routes>
           </CSSTransition>
         </TransitionGroup>

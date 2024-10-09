@@ -82,7 +82,7 @@ export default function App() {
           </Link>
         </SwiperSlide>
         <SwiperSlide className="sliderr">
-          <Link to="/about" className="w-full h-full">
+          <Link to="/research" className="w-full h-full">
             <div>UX Research</div>
           </Link>
         </SwiperSlide>

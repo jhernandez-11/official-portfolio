@@ -9,7 +9,7 @@ function SplashPage() {
     <div className="w-full h-screen flex flex-col place-content-around items-center text-left">
       <div className="flex flex-col items-center">
         <AnimatedSVG />
-        <p className="intro-text lg:w-4/6 px-6 text-xl lg:text-2xl lg:leading-loose font-mono pt-9 leading-relaxed">
+        <p className="intro-text lg:w-4/6 px-6 text-xl lg:text-xl lg:leading-loose font-mono pt-9 leading-relaxed">
           Hi, my name is Jose. <br />
           An aspiring UX Designer with a unique, abstract perspective on the
           world.
