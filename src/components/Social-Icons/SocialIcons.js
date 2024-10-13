@@ -40,7 +40,13 @@ const Footer = () => {
         </button>
       </div>
 
-      <ion-icon size="large" name="logo-behance"></ion-icon>
+      <a
+        href="https://www.behance.net/josehernandez16"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <ion-icon size="large" name="logo-behance"></ion-icon>
+      </a>
     </div>
   );
 };

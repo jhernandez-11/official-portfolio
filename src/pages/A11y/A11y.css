@@ -1,0 +1,9 @@
+.a11y-cont {
+  height: max-content;
+}
+
+@media only screen and (max-width: 1024px) {
+  .a11y-cont {
+    padding: 0 1rem 6rem 1rem;
+  }
+}

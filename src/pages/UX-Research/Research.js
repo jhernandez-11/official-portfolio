@@ -39,7 +39,7 @@ export default function App() {
   return (
     <>
       <div className="h-max grid align-middle justify-items-center">
-        <div className="w-5/6 lg:w-3/5 pb-3 border-solid border-b-4 mb-6">
+        <div className="w-11/12 lg:w-3/5 pb-3 border-solid border-b-4 mb-6">
           <div>
             <h1 className="font-mono text-3xl">Project - Elysian Gallery</h1>
             <p className="italic mt-3">
@@ -53,7 +53,7 @@ export default function App() {
             showcasing, and purchasing unique artworks at accessible prices.
           </p>
         </div>
-        <div className="w-5/6 lg:w-3/5 mb-6">
+        <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
             <span className=" font-bold text-2xl">Personas</span> - User
             personas helped me understand the needs and goals of the target
@@ -100,9 +100,9 @@ export default function App() {
             />
           </SwiperSlide>
         </Swiper>
-        <div className="w-5/6 lg:w-3/5 mb-6">
+        <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
-            <span className=" font-bold text-2xl">User Story</span> - User
+            <span className="font-bold text-2xl">User Story</span> - User
             stories helped define specific user needs and tasks, allowing me to
             prioritize features based on real user goals. This approach ensured
             that each design decision focused on creating a seamless and
@@ -147,14 +147,14 @@ export default function App() {
             />
           </SwiperSlide>
         </Swiper>
-        <div className="w-5/6 lg:w-3/5 mb-6">
+        <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
             <span className=" font-bold text-2xl">Journey Map</span> - Journey
-            Maps were used to visually chart the user's interactions with the app,
-            from initial discovery to final purchase, highlighting key moments
-            and emotions. This allowed us to pinpoint friction points and
-            opportunities for improvement, ensuring a smoother, more intuitive
-            user experience across all touchpoints.
+            Maps were used to visually chart the user's interactions with the
+            app, from initial discovery to final purchase, highlighting key
+            moments and emotions. This allowed us to pinpoint friction points
+            and opportunities for improvement, ensuring a smoother, more
+            intuitive user experience across all touchpoints.
           </p>
         </div>
         <Swiper

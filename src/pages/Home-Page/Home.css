@@ -51,7 +51,11 @@
 }
 
 .sliderr:nth-child(3) {
-  background-image: url("/public/personas-cover.png");
+  background-image: url("/public/research-cover.png");
+}
+
+.sliderr:nth-child(2) {
+  background-image: url("/public/design-cover.png");
 }
 
 .sliderr:hover {
