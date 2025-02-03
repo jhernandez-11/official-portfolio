@@ -7,21 +7,22 @@ import SplashPage from "./components/SplashPage/SplashPage";
 import CustomCursor from "./components/Cursor/CustomCursor";
 import SocialIcons from "./components/Social-Icons/SocialIcons";
 import HomeButton from "./components/Home-Button/HomeButton";
+import BackButton from "./components/Back-Button/BackButton";
 // Pages
 import Home from "./pages/Home-Page/Home";
 import About from "./pages/About-Me/About";
 import Contact from "./pages/Contact/Contact";
 import Resume from "./pages/Resume/Resume";
-import Research from "./pages/UX-Research/Research";
 import A11y from "./pages/A11y/A11y";
-import Design from "./pages/UX-Design/Design";
+import Projects from "./pages/Projects/Projects";
+import Elysian from "./pages/Projects/Elysian/Elysian";
 
 const App = () => {
   const location = useLocation(); // Get current route location
 
   return (
     <>
-      <main className="border-solid border-t-red-500 border-b-comp-blue border-y-8">
+      <main className="border-solid border-t-red-500 border-b-red-500 border-y-8">
         <SplashPage />
 
         {/* Wrap Routes with TransitionGroup */}
@@ -37,9 +38,9 @@ const App = () => {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/resume" element={<Resume />} />
-              <Route path="/research" element={<Research />} />
               <Route path="/a11y" element={<A11y />} />
-              <Route path="/design" element={<Design />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/elysian" element={<Elysian />} />
             </Routes>
           </CSSTransition>
         </TransitionGroup>
@@ -47,7 +48,8 @@ const App = () => {
 
       <CustomCursor />
       <SocialIcons />
-      {location.pathname !== "/" && <HomeButton />}
+      {location.pathname !== "/" && location.pathname !== "/elysian" && <HomeButton />}
+      {location.pathname === "/elysian" && <BackButton />}
     </>
   );
 };

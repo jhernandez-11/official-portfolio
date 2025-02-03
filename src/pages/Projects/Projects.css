@@ -1,0 +1,8 @@
+.project {
+    cursor: pointer;
+    transition: ease-out .3s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}

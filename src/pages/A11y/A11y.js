@@ -1,9 +1,11 @@
 import React from "react";
 import "./A11y.css";
+import ScrollToTop from "../../components/ScrollTop";
 
 const A11y = () => {
   return (
     <div className="a11y-cont w-full flex flex-col sm:flex-row items-center place-items-start">
+      <ScrollToTop />
       <div className="grid w-full sm:w-60 sm:place-content-center text-5xl mb-6 sm:text-7xl font-bold font-sans uppercase">
         <p className="heading-text sm:rotate-[-90deg] w-max">A11y</p>
       </div>
@@ -29,7 +31,7 @@ const A11y = () => {
         </h1>
         <div className="w-10/12">
           <img
-            className="w-72"
+            className="w-4/6"
             src={`${process.env.PUBLIC_URL}/id.png`}
             alt="inclusive design"
           />
@@ -48,40 +50,39 @@ const A11y = () => {
         </div>
         <div className="w-10/12">
           <img
-            className="w-72"
+            className="w-4/6"
             src={`${process.env.PUBLIC_URL}/rd.png`}
             alt="responsive design"
           />
           <h1 className="font-bold">Responsive web design:</h1>
           <p>
-            Websites look and work great on any
-            device—whether you're using a phone, tablet, or computer. Instead of
-            building separate versions for each screen size, responsive design
-            allows the website to automatically adjust, so it fits perfectly and
-            functions smoothly no matter what. It’s like having a website that
-            “flexes” to fit the screen you’re on! This ensures that users have a
-            seamless experience whether they're scrolling on a small smartphone
-            or browsing on a large desktop, making it more convenient and
-            enjoyable for everyone.
+            Websites look and work great on any device—whether you're using a
+            phone, tablet, or computer. Instead of building separate versions
+            for each screen size, responsive design allows the website to
+            automatically adjust, so it fits perfectly and functions smoothly no
+            matter what. It’s like having a website that “flexes” to fit the
+            screen you’re on! This ensures that users have a seamless experience
+            whether they're scrolling on a small smartphone or browsing on a
+            large desktop, making it more convenient and enjoyable for everyone.
           </p>
         </div>
         <div className="w-10/12 mt-6 lg:mb-24">
           <img
-            className="w-full mt-12"
+            className="w-4/6 mt-12"
             src={`${process.env.PUBLIC_URL}/ucd.png`}
             alt="user-centered design"
           />
           <h1 className="font-bold mt-6">User-centered design:</h1>
           <p>
-            Putting people first when creating products like apps or
-            websites. It means really understanding what users need, what
-            challenges they face, and what will make their experience as smooth
-            and enjoyable as possible. Instead of designing based on
-            assumptions, user-centered design involves asking questions, testing
-            ideas, and constantly improving based on feedback. When you keep the
-            users at the heart of the process, you end up with a product that
-            not only looks good but also works well for the people who use
-            it—making their lives easier and more enjoyable!
+            Putting people first when creating products like apps or websites.
+            It means really understanding what users need, what challenges they
+            face, and what will make their experience as smooth and enjoyable as
+            possible. Instead of designing based on assumptions, user-centered
+            design involves asking questions, testing ideas, and constantly
+            improving based on feedback. When you keep the users at the heart of
+            the process, you end up with a product that not only looks good but
+            also works well for the people who use it—making their lives easier
+            and more enjoyable!
           </p>
         </div>
       </div>

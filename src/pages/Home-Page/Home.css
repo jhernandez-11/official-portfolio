@@ -21,45 +21,32 @@
 }
 
 .sliderr {
-  background-color: #44efef;
+  background-color: white;
   justify-self: center;
   align-self: center;
   border-radius: 0.5rem;
-  background-size: cover;
-  background-repeat: none;
-  background-position: bottom;
+  border: black solid 3px;
   cursor: pointer;
 }
 
 .sliderr a div {
-  background-color: rgba(255, 255, 255, 0.75);
-  width: 18rem;
-  height: 6rem;
   display: grid;
   align-items: center;
   justify-content: center;
   align-content: center;
-  margin: 1rem 0 0 1rem;
+  height: 100%;
   border-radius: 6px;
 }
 
 .sliderr:hover a div {
   color: white;
   background-color: transparent;
-  transform: scale(1.11);
+  transform: scale(1.05);
   transition: ease-out .6s all;
-}
-
-.sliderr:nth-child(3) {
-  background-image: url("/public/research-cover.png");
-}
-
-.sliderr:nth-child(2) {
-  background-image: url("/public/design-cover.png");
 }
 
 .sliderr:hover {
   background-image: none;
-  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .6s;
   background-color: #EF4444;
 }

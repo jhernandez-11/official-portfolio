@@ -1,0 +1,9 @@
+.icon-back {
+  position: fixed;
+  bottom: 6vh;
+  left: 6vw;
+  z-index: 1;
+  width: 3rem;
+  cursor: pointer;
+  clip-path: view-box;
+}

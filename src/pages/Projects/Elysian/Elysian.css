@@ -25,6 +25,21 @@
   .r-sliderr {
     height: 50vw !important;
   }
+
+  #elysian-hifi {
+  width: 75vw;
+}
+}
+
+@media screen and (max-width: 640px) {
+  #elysian-hifi {
+  width: 90vw;
+}
+
+}
+
+#elysian-hifi {
+  margin-top: 1rem;
 }
 
 .r-sliderr img {

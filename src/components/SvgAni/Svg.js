@@ -29,7 +29,7 @@ const SvgDrawingEffect = () => {
         <defs>
           <g />
         </defs>
-        <g fill="none" stroke="#ef4444" strokeWidth="6">
+        <g fill="none" stroke="black" strokeWidth="6">
           <g transform="translate(107.484372, 227.249985)">
             <g>
               <path
