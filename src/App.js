@@ -17,6 +17,7 @@ import A11y from "./pages/A11y/A11y";
 import Projects from "./pages/Projects/Projects";
 import Elysian from "./pages/Projects/Elysian/Elysian";
 import PocketX from "./pages/Projects/PocketX/PocketX";
+import JeepneyMaps from "./pages/Projects/JeepneyMaps/JeepneyMaps";
 
 const App = () => {
   const location = useLocation(); // Get current route location
@@ -43,6 +44,7 @@ const App = () => {
               <Route path="/projects" element={<Projects />} />
               <Route path="/elysian" element={<Elysian />} />
               <Route path="/pocketX" element={<PocketX />} />
+              <Route path="/jeepneyMaps" element={<JeepneyMaps />} />
             </Routes>
           </CSSTransition>
         </TransitionGroup>
@@ -52,9 +54,11 @@ const App = () => {
       <SocialIcons />
       {location.pathname !== "/" &&
         location.pathname !== "/elysian" &&
-        location.pathname !== "/pocketX" && <HomeButton />}
+        location.pathname !== "/pocketX" &&
+        location.pathname !== "/jeepneyMaps" && <HomeButton />}
       {(location.pathname === "/elysian" ||
-        location.pathname === "/pocketX") && <BackButton />}
+        location.pathname === "/pocketX" ||
+        location.pathname === "/jeepneyMaps" ) && <BackButton />}
     </>
   );
 };

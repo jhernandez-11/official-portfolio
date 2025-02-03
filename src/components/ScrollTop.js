@@ -8,10 +8,12 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.scrollTo({
-      top: height,
-      behavior: "smooth",
+      top: height, // Scroll to the top of the page
+      behavior: "smooth", // Optional: Add smooth scrolling
     });
-  });
+  }, [pathname]); // Run only when `pathname` changes
+
+  return null; // This component doesn't render anything
 };
 
 export default ScrollToTop;

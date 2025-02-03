@@ -7,7 +7,7 @@ const ScrollToBottom = () => {
     // Get the button's position on the page
     const buttonPosition = buttonRef.current.getBoundingClientRect().top + window.scrollY;
 
-    const offset = window.innerWidth * 0.15;
+    const offset = window.innerWidth * 0.05;
 
     // Scroll to just below the button
     window.scrollTo({

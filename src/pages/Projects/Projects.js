@@ -26,12 +26,14 @@ const Projects = () => {
         </Link>
       </div>
       <div className="text-center flex flex-col items-center">
-        <p className="text-2xl">Jeepney Maps</p>
-        <img
-          className="project w-5/6 sm:w-full"
-          src={`${process.env.PUBLIC_URL}/3.png`}
-          alt="user-centered design"
-        />
+        <Link to="/jeepneyMaps" className="w-full h-full place-items-center">
+          <p className="text-2xl">Jeepney Maps</p>
+          <img
+            className="project w-5/6 sm:w-full"
+            src={`${process.env.PUBLIC_URL}/3.png`}
+            alt="user-centered design"
+          />
+        </Link>
       </div>
     </div>
   );
