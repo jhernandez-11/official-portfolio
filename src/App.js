@@ -16,6 +16,7 @@ import Resume from "./pages/Resume/Resume";
 import A11y from "./pages/A11y/A11y";
 import Projects from "./pages/Projects/Projects";
 import Elysian from "./pages/Projects/Elysian/Elysian";
+import PocketX from "./pages/Projects/PocketX/PocketX";
 
 const App = () => {
   const location = useLocation(); // Get current route location
@@ -41,6 +42,7 @@ const App = () => {
               <Route path="/a11y" element={<A11y />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/elysian" element={<Elysian />} />
+              <Route path="/pocketX" element={<PocketX />} />
             </Routes>
           </CSSTransition>
         </TransitionGroup>
@@ -48,8 +50,11 @@ const App = () => {
 
       <CustomCursor />
       <SocialIcons />
-      {location.pathname !== "/" && location.pathname !== "/elysian" && <HomeButton />}
-      {location.pathname === "/elysian" && <BackButton />}
+      {location.pathname !== "/" &&
+        location.pathname !== "/elysian" &&
+        location.pathname !== "/pocketX" && <HomeButton />}
+      {(location.pathname === "/elysian" ||
+        location.pathname === "/pocketX") && <BackButton />}
     </>
   );
 };

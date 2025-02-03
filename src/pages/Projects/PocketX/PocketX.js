@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ScrollToTop from "../../../components/ScrollTop";
 
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./Elysian.css";
+import "./PocketX.css";
 
 // Import required modules
 import { Grid, Pagination, Navigation } from "swiper/modules";
@@ -44,16 +43,19 @@ export default function App() {
       <div className="h-max grid align-middle justify-items-center">
         <div className="w-11/12 lg:w-3/5 pb-3 border-solid border-b-4 mb-6">
           <div>
-            <h1 className="font-mono text-3xl">Project - Elysian</h1>
+            <h1 className="font-mono text-3xl">Project - PocketX</h1>
             <p className="italic mt-3">
               {" "}
               Google UX Design Professional Certificate
             </p>
           </div>
           <p className="w-full pt-3 font-mono">
-            Challenge: Build a budget-friendly art marketplace app that connects
-            artists and buyers, offering a seamless platform for discovering,
-            showcasing, and purchasing unique artworks at accessible prices.
+            Challenge: Build a user-friendly currency exchange app, PocketX,
+            that helps global travelers find real-time exchange rates and
+            quickly convert currencies. The app aims to provide a seamless
+            experience for checking rates, making conversions, and managing
+            currency information on the go, with a focus on speed, accuracy, and
+            ease of use.
           </p>
         </div>
         <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
@@ -91,15 +93,8 @@ export default function App() {
           <SwiperSlide className="r-sliderr">
             <img
               className="h-full"
-              src={`${process.env.PUBLIC_URL}/persona/emily.png`}
+              src={`${process.env.PUBLIC_URL}/persona/daniel.png`}
               alt="emily persona"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="r-sliderr">
-            <img
-              className="h-full"
-              src={`${process.env.PUBLIC_URL}/persona/robert.png`}
-              alt="robert persona"
             />
           </SwiperSlide>
         </Swiper>
@@ -138,15 +133,8 @@ export default function App() {
           <SwiperSlide className="r-sliderr">
             <img
               className="h-full"
-              src={`${process.env.PUBLIC_URL}/journey-map/emily.png`}
+              src={`${process.env.PUBLIC_URL}/journey-map/daniel.png`}
               alt="emily journey"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="r-sliderr">
-            <img
-              className="h-full"
-              src={`${process.env.PUBLIC_URL}/journey-map/robert.png`}
-              alt="robert journey"
             />
           </SwiperSlide>
         </Swiper>
@@ -187,15 +175,8 @@ export default function App() {
           <SwiperSlide className="r-sliderr">
             <img
               className="h-full"
-              src={`${process.env.PUBLIC_URL}/sitemap.png`}
+              src={`${process.env.PUBLIC_URL}/sitemapx.png`}
               alt="information architecture"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="r-sliderr">
-            <img
-              className="h-full"
-              src={`${process.env.PUBLIC_URL}/sitemap-2.png`}
-              alt="robert persona"
             />
           </SwiperSlide>
         </Swiper>
@@ -237,14 +218,14 @@ export default function App() {
           <SwiperSlide className="r-sliderr">
             <img
               className="h-full"
-              src={`${process.env.PUBLIC_URL}/e-paper-wireframes.png`}
+              src={`${process.env.PUBLIC_URL}/paper-desktop.jpg`}
               alt="emily story"
             />
           </SwiperSlide>
           <SwiperSlide className="r-sliderr">
             <img
               className="h-full"
-              src={`${process.env.PUBLIC_URL}/paper-wireframe.png`}
+              src={`${process.env.PUBLIC_URL}/paper-mobile.jpg`}
               alt="robert story"
             />
           </SwiperSlide>
@@ -286,14 +267,14 @@ export default function App() {
           <SwiperSlide className="r-sliderr">
             <img
               className="h-full"
-              src={`${process.env.PUBLIC_URL}/lo-fi-wireframes-1.png`}
+              src={`${process.env.PUBLIC_URL}/lofi-desktop.png`}
               alt="emily journey"
             />
           </SwiperSlide>
           <SwiperSlide className="r-sliderr">
             <img
               className="h-full"
-              src={`${process.env.PUBLIC_URL}/lo-fi-wireframes-2.png`}
+              src={`${process.env.PUBLIC_URL}/lofi-mobile.png`}
               alt="robert journey"
             />
           </SwiperSlide>
@@ -338,26 +319,37 @@ export default function App() {
           <SwiperSlide className="r-sliderr">
             <img
               className="h-full"
-              src={`${process.env.PUBLIC_URL}/hi-fi-1.png`}
+              src={`${process.env.PUBLIC_URL}/desktop-home.png`}
               alt="emily journey"
             />
           </SwiperSlide>
           <SwiperSlide className="r-sliderr">
             <img
               className="h-full"
-              src={`${process.env.PUBLIC_URL}/hi-fi-2.png`}
+              src={`${process.env.PUBLIC_URL}/mobile-home.png`}
               alt="robert journey"
             />
           </SwiperSlide>
         </Swiper>
         <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
-          <p className="font-bold text-2xl">Prototype</p>
+          <p className="font-bold text-2xl">Prototype - Mobile</p>
           <iframe
-            id="elysian-hifi"
+            className="pocketx-hifi mobile prototype"
             title="elysian prototype"
             width="800"
             height="450"
-            src="https://embed.figma.com/proto/cAKa1ccuml8vOxJJW02d9m/Hi-fi-Prototypes?page-id=0%3A1&node-id=1-3&viewport=211%2C272%2C0.58&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3&embed-host=share"
+            src="https://embed.figma.com/proto/cAKa1ccuml8vOxJJW02d9m/Hi-fi-Prototypes?page-id=208%3A984&node-id=208-1296&p=f&viewport=-144%2C227%2C0.14&scaling=scale-down&content-scaling=fixed&starting-point-node-id=208%3A1289&embed-host=share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
+          <p className="font-bold text-2xl">Prototype - Desktop</p>
+          <iframe
+            className="pocketx-hifi"
+            title="pocketX desktop prototype"
+            width="800"
+            height="450"
+            src="https://embed.figma.com/proto/cAKa1ccuml8vOxJJW02d9m/Hi-fi-Prototypes?page-id=180%3A488&node-id=180-489&p=f&viewport=273%2C100%2C0.15&scaling=scale-down&content-scaling=fixed&starting-point-node-id=180%3A489&embed-host=share"
             allowfullscreen
           ></iframe>
         </div>

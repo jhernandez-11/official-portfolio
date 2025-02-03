@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 600px) {
   .swiper-slide {
-    height: calc((100% - 30px)) !important;
+    height: calc((75% - 30px)) !important;
   }
 }
 
