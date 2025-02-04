@@ -15,7 +15,7 @@ function SplashPage() {
           world.
         </p>
       </div>
-      <div className="px-6 w-min sm:w-fit text-4xl md:text-6xl font-extrabold">
+      <div className="px-6 w-min sm:w-fit text-5xl md:text-6xl font-extrabold">
         <p className="heading-text bg-clip-text text-transparent bg-gradient-to-r from-black to-red-500 py-3">
           Think. Design. Refine
         </p>

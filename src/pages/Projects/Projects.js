@@ -14,6 +14,15 @@ const Projects = () => {
             alt="user-centered design"
           />
         </Link>
+        <div className="mb-6">
+          <a
+            href="/elysian-case-study.pdf"
+            download="elysian-case-study.pdf"
+            className="underline text-red-500 p-3"
+          >
+            Download Case Study
+          </a>
+        </div>
       </div>
       <div className="text-center flex flex-col items-center">
         <Link to="/pocketX" className="w-full h-full place-items-center">
@@ -24,6 +33,15 @@ const Projects = () => {
             alt="user-centered design"
           />
         </Link>
+        <div className="mb-6">
+          <a
+            href="/pocketx-case-study.pdf"
+            download="pocketx-case-study.pdf"
+            className="underline text-red-500 p-3"
+          >
+            Download Case Study
+          </a>
+        </div>
       </div>
       <div className="text-center flex flex-col items-center">
         <Link to="/jeepneyMaps" className="w-full h-full place-items-center">
@@ -34,6 +52,15 @@ const Projects = () => {
             alt="user-centered design"
           />
         </Link>
+        <div className="mb-6">
+          <a
+            href="/jeepney-maps-case-study.pdf"
+            download="jeepney-maps-case-study.pdf"
+            className="underline text-red-500 p-3"
+          >
+            Download Case Study
+          </a>
+        </div>
       </div>
     </div>
   );
