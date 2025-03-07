@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ScrollToTop from "../../../components/ScrollTop";
 
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/grid";
@@ -58,12 +57,14 @@ export default function App() {
         </div>
         <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
-            <span className=" font-bold text-2xl">Personas</span> - User
-            personas helped me understand the needs and goals of the target
-            audience, guiding my design decisions to ensure the final product
-            was user-centered and accessible. By focusing on specific user
-            types, I was able to create more tailored, meaningful experiences
-            that addressed real user pain points and enhanced overall usability.
+            <span className="font-bold text-2xl">Personas</span> -We used
+            Journey Maps to visually trace how users interact with the app, from
+            the moment they first discover it to making a purchase. These maps
+            highlighted key moments and emotions, helping us spot any bumps in
+            the road and identify opportunities for improvement. This approach
+            allowed us to ensure a smoother, more intuitive user experience
+            across all touchpoints, making every interaction with the app a
+            delightful one.
           </p>
         </div>
         <Swiper
@@ -105,12 +106,16 @@ export default function App() {
         </Swiper>
         <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
-            <span className=" font-bold text-2xl">Journey Map</span> - Journey
-            Maps were used to visually chart the user's interactions with the
-            app, from initial discovery to final purchase, highlighting key
-            moments and emotions. This allowed us to pinpoint friction points
-            and opportunities for improvement, ensuring a smoother, more
-            intuitive user experience across all touchpoints.
+            <span className=" font-bold text-2xl">Journey Map</span> - We used
+            We crafted a Journey Map for Emily Rodriguez to trace her
+            interactions with our online auction platform, from the initial
+            discovery of contemporary art pieces to making a final purchase. By
+            highlighting key moments and emotions, we could see her journey
+            through four main actions: discovering new art, researching artists,
+            placing a bid, and finalizing the transaction. This approach allowed
+            us to spot any friction points and uncover opportunities for
+            improvement, ensuring a smoother and more intuitive user experience
+            at every touchpoint.
           </p>
         </div>
         <Swiper
@@ -152,14 +157,15 @@ export default function App() {
         </Swiper>
         <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
-            <span className=" font-bold text-2xl">Site map</span> - In my
-            project, the sitemap and information architecture were key to
-            organizing the app’s structure and ensuring users can easily
-            navigate between sections. By clearly defining how content is
-            grouped and linked, I was able to create intuitive pathways for both
-            artists and buyers, making it easier for them to find what they
-            need. This approach streamlined the user experience, reducing
-            confusion and improving overall usability.
+            <span className=" font-bold text-2xl">Site map</span> - The Sitemap
+            for our app provides a clear and organized overview of all the key
+            sections and pages, helping users navigate seamlessly. It visually
+            lays out the structure of the app, starting from the home page and
+            branching out to different categories like user profiles, product
+            listings, and the checkout process. This visual guide ensures that
+            every aspect of the app is easily accessible, enhancing the overall
+            user experience and making sure users can find what they need
+            quickly and efficiently.
           </p>
         </div>
         <Swiper
@@ -201,15 +207,15 @@ export default function App() {
         </Swiper>
         <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
-            <span className="font-bold text-2xl">Paper wireframes</span> - In my
-            project, paper wireframes played a crucial role in shaping the
-            initial layout and structure of the app. They allowed me to quickly
-            sketch and experiment with different ideas for the user interface,
-            helping me visualize how key elements like navigation, galleries,
-            and product listings would be placed. These wireframes provided a
-            solid foundation to test and gather feedback before moving into
-            higher-fidelity designs, saving time and guiding the design process
-            efficiently.
+            <span className="font-bold text-2xl">Paper wireframes</span> - We
+            started with Paper Wireframes to sketch out the basic structure and
+            layout of the app. These hand-drawn sketches allowed us to quickly
+            brainstorm and iterate on different design ideas. By visually
+            mapping out each screen and user flow, we could easily identify the
+            best layout and interactions for a smooth user experience. This
+            initial step helped us to lay a solid foundation before moving on to
+            digital prototypes, ensuring that we captured the core functionality
+            and design elements early in the process.
           </p>
         </div>
         <Swiper
@@ -252,13 +258,14 @@ export default function App() {
         <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
             <span className=" font-bold text-2xl">Low fidelity (lo-fi)</span> -
-            In my project, lo-fi wireframes were essential for translating the
-            initial sketches into a more refined, digital layout. They helped me
-            focus on the core structure and functionality of the app without
-            getting distracted by visual details, allowing me to test user flows
-            and interactions early on. By using lo-fi wireframes, I was able to
-            gather valuable feedback on the app’s usability and make necessary
-            adjustments before moving on to high-fidelity designs.
+            We created Low-Fidelity Wireframes to outline the basic structure
+            and flow of the app without getting caught up in the details. These
+            simple, grayscale sketches allowed us to focus on the overall user
+            experience and layout. By quickly iterating on these wireframes, we
+            could make rapid adjustments based on feedback, ensuring that the
+            core functionality and navigation were spot-on before moving on to
+            more detailed designs. This approach helped us streamline the design
+            process and create a solid foundation for the app.
           </p>
         </div>
         <Swiper
@@ -301,16 +308,15 @@ export default function App() {
         <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
             <span className=" font-bold text-2xl">High fidelity (hi-fi)</span> -
-            In my project, high-fidelity wireframes were crucial for bringing
-            the app’s design to life. They allowed me to refine the layout,
-            incorporate detailed visual elements, and establish a cohesive
-            design system, including typography, colors, and icons. By using
-            hi-fi wireframes, I was able to create a realistic representation of
-            the final product, which helped stakeholders visualize the app’s
-            look and feel. This stage also enabled me to conduct more advanced
-            usability testing, ensuring that both the aesthetics and
-            functionality aligned with user expectations before moving into
-            development.
+            We designed High-Fidelity Wireframes to bring our app to life with
+            detailed visuals and interactive elements. These polished wireframes
+            included precise layouts, colors, typography, and user interface
+            components, closely resembling the final product. By simulating the
+            real user experience, we could thoroughly test and refine the
+            design, ensuring everything looked and functioned perfectly. This
+            step helped us bridge the gap between conceptual ideas and the final
+            app, making sure we delivered a seamless and visually appealing user
+            experience.
           </p>
         </div>
         <Swiper
