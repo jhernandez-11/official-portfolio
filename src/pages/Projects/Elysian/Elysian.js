@@ -106,7 +106,7 @@ export default function App() {
         </Swiper>
         <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
-            <span className=" font-bold text-2xl">Journey Map</span> - We used
+            <span className=" font-bold text-2xl">Journey Map</span> - We
             crafted a Journey Map for Emily Rodriguez to trace her interactions
             with our online auction platform, from the initial discovery of
             contemporary art pieces to making a final purchase. By highlighting
