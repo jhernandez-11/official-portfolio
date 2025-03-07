@@ -107,15 +107,14 @@ export default function App() {
         <div className="w-11/12 lg:w-3/5 mb-6 leading-loose">
           <p>
             <span className=" font-bold text-2xl">Journey Map</span> - We used
-            We crafted a Journey Map for Emily Rodriguez to trace her
-            interactions with our online auction platform, from the initial
-            discovery of contemporary art pieces to making a final purchase. By
-            highlighting key moments and emotions, we could see her journey
-            through four main actions: discovering new art, researching artists,
-            placing a bid, and finalizing the transaction. This approach allowed
-            us to spot any friction points and uncover opportunities for
-            improvement, ensuring a smoother and more intuitive user experience
-            at every touchpoint.
+            crafted a Journey Map for Emily Rodriguez to trace her interactions
+            with our online auction platform, from the initial discovery of
+            contemporary art pieces to making a final purchase. By highlighting
+            key moments and emotions, we could see her journey through four main
+            actions: discovering new art, researching artists, placing a bid,
+            and finalizing the transaction. This approach allowed us to spot any
+            friction points and uncover opportunities for improvement, ensuring
+            a smoother and more intuitive user experience at every touchpoint.
           </p>
         </div>
         <Swiper
